@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 17" width="15" height="17">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-451 -610L1469 -610L1469 2059L-451 2059Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #3c89ff } 
+	</style>
+	<g id="Unova explorer - Bundles" clip-path="url(#cp1)">
+		<g id="Group 48">
+			<path id="Path 5" fill-rule="evenodd" class="shp0" d="M14.64 4.32L14.64 12.77L7.32 17L0 12.77L0 4.32L7.32 0.1L14.64 4.32ZM7.32 1.24L1.49 4.61L7.32 7.97L13.15 4.61L7.32 1.24ZM0.99 12.2L6.82 15.57L6.82 8.83L0.99 5.47L0.99 12.2ZM13.65 12.2L13.65 5.47L7.82 8.83L7.82 15.57L13.65 12.2Z" />
+		</g>
+	</g>
+</svg>

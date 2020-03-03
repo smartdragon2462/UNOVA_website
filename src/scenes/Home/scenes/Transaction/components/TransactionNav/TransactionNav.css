@@ -1,0 +1,144 @@
+.TransactionNav {
+  margin-bottom: 0; }
+
+.TransactionNav .page_logo__icon svg path {
+  fill: #fff; }
+
+.TransactionNav .info .point.hash .value {
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.TransactionNav .info .point.hash .value > span {
+  margin-left: 0; }
+
+.TransactionNav .info .point.status .value.fail {
+  color: #F7A120; }
+
+.TransactionNav .info .point.status .value.success {
+  color: #40D685; }
+
+@media only screen and (max-width: 900px) {
+  .TransactionNav .info .point.hash {
+    display: block;
+    width: 100%; } }
+
+.App .Content > * {
+  overflow: hidden; }
+
+.TransactionNav {
+  margin-bottom: 0;
+  font-family: 'Montserrat', sans-serif; }
+  .TransactionNav .sub-header > div {
+    -webkit-animation: fadeIn .5s forwards;
+    animation: fadeIn .5s forwards; }
+  .TransactionNav .wrapper1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("/assets/images/background1.png");
+    padding-top: 150px;
+    font-family: 'Montserrat', sans-serif; }
+    .TransactionNav .wrapper1 aside.decoration {
+      justify-content: center; }
+      .TransactionNav .wrapper1 aside.decoration .page_logo {
+        display: inline-block;
+        position: relative;
+        top: -25px; }
+        .TransactionNav .wrapper1 aside.decoration .page_logo .page_logo__icon.fadeIn {
+          -webkit-animation: fadeIn .8s forwards;
+          animation: fadeIn .8s forwards; }
+        .TransactionNav .wrapper1 aside.decoration .page_logo .page_logo__icon {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0); }
+    .TransactionNav .wrapper1 aside {
+      flex-basis: 220px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start; }
+    .TransactionNav .wrapper1 aside + section {
+      padding-left: 15px; }
+    .TransactionNav .wrapper1 .info {
+      font-family: 'Montserrat', sans-serif;
+      flex: 1 1; }
+      .TransactionNav .wrapper1 .info h1 {
+        font-size: 40px; }
+      .TransactionNav .wrapper1 .info .title {
+        font-size: 32px;
+        color: white;
+        font-weight: 500; }
+      @media screen and (min-width: 900px) {
+        .TransactionNav .wrapper1 .info .stats {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap; } }
+      .TransactionNav .wrapper1 .info .stats {
+        padding: 20px 0;
+        margin-right: 100px; }
+        .TransactionNav .wrapper1 .info .stats .point {
+          position: relative;
+          text-transform: capitalize;
+          color: white;
+          font-family: 'Montserrat', sans-serif; }
+          .TransactionNav .wrapper1 .info .stats .point .key {
+            color: #9198bb;
+            font-size: .70rem;
+            font-size: .75rem;
+            line-height: 12px;
+            font-weight: 500;
+            text-transform: uppercase; }
+          .TransactionNav .wrapper1 .info .stats .point .value {
+            cursor: default;
+            white-space: nowrap; }
+            .TransactionNav .wrapper1 .info .stats .point .value .middleEllipsis {
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 600;
+              display: inline-flex;
+              flex-direction: row;
+              flex-wrap: nowrap;
+              justify-content: flex-start;
+              font-weight: inherit;
+              font-size: 16px;
+              max-width: 100%;
+              line-height: 1;
+              -webkit-user-select: all;
+              -moz-user-select: all;
+              -ms-user-select: all;
+              user-select: all;
+              color: inherit; }
+            .TransactionNav .wrapper1 .info .stats .point .value span {
+              word-wrap: break-word; }
+          .TransactionNav .wrapper1 .info .stats .point h4.value {
+            font-size: 22px;
+            font-size: 1.375rem;
+            line-height: 22px;
+            line-height: 1.375rem;
+            cursor: default;
+            font-weight: 400;
+            margin-top: 10px;
+            position: relative;
+            white-space: nowrap; }
+          .TransactionNav .wrapper1 .info .stats .point h4.value > span {
+            text-transform: capitalize;
+            margin-left: 10px; }
+        .TransactionNav .wrapper1 .info .stats .point.hash .value > span {
+          margin-left: 0; }
+    .TransactionNav .wrapper1 section > div {
+      flex: 1 1; }
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  .sub-header .point {
+    display: inline-block;
+    width: 50%;
+    margin: 20px 0 30px; } }
+
+section {
+  flex: 1 1;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }

@@ -1,0 +1,215 @@
+.formview-wrapper{
+    display: flex;
+    flex-direction: column;
+    .blocks-informs-wrapper{
+        display: flex;
+        top: 0;
+        width: 100%;
+        padding:120px 100px 40px 100px;
+        background-image: url("/assets/images/background1.png");
+        color: white;
+        .blocks-header-info-group{
+            margin-left: 30px;
+            font-family: 'Montserrat', sans-serif;
+            .blocks-header-infos{
+                display: flex;
+                .blocks-header-info-items{
+                    margin-right: 30px;;
+
+                    .blocks-header-info-title{                        
+                        font-size: 9px;
+                        color: rgb(212, 212, 212);
+                    }
+                    .blocks-header-info-val{
+                        margin-top: 3px;
+                        font-size: 12px;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                    }
+                    .blocks-header-info-val1{
+                        margin-top: 3px;
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: #4fb6f4;
+                    }
+                }
+            }
+        }
+        
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        h7{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        h6{
+            margin-top: 60px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+        }   
+    }
+    .form-wrapper{
+        position: relative;
+        .form-tabs-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: absolute;
+            top: -35px;
+            padding: 0px 100px;
+            width: 100%;
+            .tab-item{
+                margin: auto;
+                padding:15px;
+                border-radius: 10px;
+                background-color: white;
+                box-shadow: 0px 2px 3px rgba(0,0,0,.1);
+                font-family: 'Montserrat', sans-serif;
+                font-size: 13px;              
+               
+            }
+            .tab-item:first-child{
+                margin-left: 0px;
+                margin: inherit;
+            }
+            .tab-item:last-child{
+                margin-right:0px;
+            }
+            
+        }
+        .blocks-list-title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: rgb(66, 63, 63);
+            margin-bottom: 10px;
+        }
+
+        .all-block-list-group{
+            padding: 25px 100px 10px 100px;
+            background: white;
+            .blocks_detail-card:not(:last-child){
+                .decoration{
+                    .timeline:before{
+                        content: "";
+                        display: block;
+                        width: 2px;
+                        height: 40%;
+                        position: absolute;
+                        top: 95%;
+                        left: 50%;
+                        margin-left: -1px;
+                        transform: translateY(-50%);
+                        background: #48a3ff;
+                    }
+                }
+            }
+            .blocks_detail-card{
+                display: flex;
+                margin-bottom: 10px;
+                position: relative;;
+                .decoration{
+                    justify-content: center;
+                    display: flex;
+                    .timeline{
+                        top: -20;
+                        position: relative;
+                    }
+                    .timeline_icon{
+                        position: relative;
+                        text-align: center;
+                        padding: 25px;
+                        background:transparent;
+                        padding-top: 15px;
+                    }
+                    .time_ago{
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 8px;
+                        line-height: 0.6875rem;
+                        color: rgb(97, 97, 97);
+                        position: relative;
+                        top: -20px;
+                        text-align: center;
+                    }
+                }
+                .blocks-card-info{
+                    flex: 1;
+                    padding: 0px 10px 0px 10px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 13px;
+                    font-weight: 600;
+                    .blocks-list-detail-id{
+                        a{
+                            color: rgb(42, 42, 42);
+                            &:hover{
+                                font-weight: bold;
+                            }
+                        }
+                    }                       
+
+                    
+                    .blocks-detail-firstLine{
+                        display: flex;
+                        .blocks-list-detail-date{
+                            font-size: 10px;
+                            font-weight: 600;
+                            color: rgb(122, 122, 122);
+                        }
+                        
+                        .blocks-list-detail-HEX_val{
+                            font-size: 10px;
+                            color: #48a3ff;
+                            margin-left: 50px;
+                        }
+                        .blocks-list-detail-percent{
+                            font-size: 11px;
+                            font-weight: 600;
+                            display: flex;
+                            flex: 1;
+                            justify-content: flex-end;
+                        }
+                    }
+
+                    .blocks-list-detail-info{
+                        font-size: 9px;
+                        color: rgb(122, 122, 122);
+                        margin-left: -10px;
+                        display: flex;
+                        font-weight: 600;
+                        span{                            
+                            color: #48a3ff;     
+                            padding-left: 10px;
+                            padding-right: 3px;                       
+                        }
+                        .detail1{
+                            color: #48a3ff;     
+                            padding-left: 3px;
+                            padding-right: 3px;                              
+                        }
+
+                        .usedInfo{
+                            color: rgb(190, 188, 188);
+                            display: flex;
+                            font-size: 10px;
+                            flex: 1;    
+                            justify-content: flex-end;      
+                            span{                            
+                                color: rgb(190, 188, 188);    
+                                padding-left: 3px;
+                                padding-right: 3px;                       
+                            }                 
+                        }
+                    }
+                    
+
+                }
+            }
+        }
+    }
+}

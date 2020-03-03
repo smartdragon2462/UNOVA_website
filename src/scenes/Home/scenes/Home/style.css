@@ -1,0 +1,219 @@
+.formview-wrapper {
+  display: flex;
+  flex-direction: column; }
+  .formview-wrapper .form-informs-wrapper {
+    top: 0;
+    width: 100%;
+    padding: 100px 100px 20px 100px;
+    background-image: url("/assets/images/background1.png");
+    color: white; }
+    .formview-wrapper .form-informs-wrapper h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      font-weight: 600; }
+    .formview-wrapper .form-informs-wrapper h7 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 600; }
+    .formview-wrapper .form-informs-wrapper h6 {
+      margin-top: 60px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 600; }
+    .formview-wrapper .form-informs-wrapper .subtitle {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      color: "#adadad";
+      padding: 0px;
+      margin-bottom: "0px";
+      margin-top: 0px; }
+    .formview-wrapper .form-informs-wrapper span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #61adff;
+      margin-left: 5px;
+      margin-right: 20px; }
+  .formview-wrapper .form-wrapper {
+    position: relative; }
+    .formview-wrapper .form-wrapper .button-region {
+      justify-content: center;
+      display: flex;
+      margin-top: -15px; }
+      .formview-wrapper .form-wrapper .button-region .load-all-btn {
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 15px;
+        padding: 6px;
+        width: 100px;
+        background-color: #4b83ec;
+        color: white;
+        font-size: 12px;
+        margin-bottom: 50px;
+        padding-left: 25px; }
+    .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper {
+      display: flex;
+      justify-content: left;
+      align-items: flex-end;
+      position: absolute;
+      top: -35px;
+      width: 100%;
+      margin-left: 0px;
+      overflow: hidden;
+      padding-bottom: 5px; }
+      .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper .tab-item {
+        margin-right: 15px;
+        padding: 15px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px; }
+        .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper .tab-item .tab-card-sn {
+          font-size: 10px;
+          color: #48a3ff;
+          margin-bottom: -9px;
+          margin-top: 3px;
+          font-weight: 600; }
+        .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper .tab-item .tab-card-id {
+          display: flex;
+          width: 170px; }
+        .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper .tab-item .tab-card-id-value {
+          flex: 1;
+          color: #2e2e2e; }
+        .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper .tab-item .tab-card-time {
+          font-size: 8px;
+          margin-bottom: -5px;
+          margin-top: -9px;
+          color: #2e2e2e; }
+        .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper .tab-item .tab-first-time {
+          color: #48a3ff;
+          font-weight: 600;
+          width: 70px; }
+        .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper .tab-item .tab-first-value {
+          font-weight: 600;
+          font-size: 8px;
+          margin-bottom: -5px; }
+        .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper .tab-item .tab-first-contents {
+          margin-top: 5px;
+          font-size: 7px; }
+      .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper .tab-item a {
+        text-decoration: none;
+        display: block; }
+      .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper .tab-item:hover {
+        border: 1px solid #48a3ff;
+        box-shadow: 0px 4px 8px rgba(145, 152, 187, 0.25); }
+      .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper .tab-item:hover .tab-card-id-value {
+        color: #48a3ff; }
+      .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper .tab-item:first-child {
+        margin-left: 100px;
+        border: 1px solid transparent; }
+      .formview-wrapper .form-wrapper .blocks_form-tabs-wrapper .tab-item:last-child {
+        margin-right: 0px; }
+    .formview-wrapper .form-wrapper .block-list-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #423f3f;
+      margin-bottom: 10px; }
+    .formview-wrapper .form-wrapper .form-details-wrapper {
+      padding: 85px 100px 10px 100px;
+      background: white; }
+      .formview-wrapper .form-wrapper .form-details-wrapper .detail-card:not(:last-child) .decoration .timeline:before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 40%;
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        margin-left: -1px;
+        transform: translateY(-50%);
+        background: #48a3ff; }
+      .formview-wrapper .form-wrapper .form-details-wrapper .detail-card {
+        display: flex;
+        margin-bottom: 10px;
+        position: relative; }
+        .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .decoration {
+          justify-content: center;
+          display: flex; }
+          .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .decoration .timeline {
+            top: -20;
+            position: relative; }
+          .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .decoration .timeline_icon {
+            position: relative;
+            text-align: center;
+            padding: 25px;
+            background-color: transparent;
+            padding-top: 15px; }
+          .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .decoration .time_ago {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 8px;
+            line-height: 0.6875rem;
+            color: #616161;
+            position: relative;
+            top: -20px;
+            text-align: center; }
+        .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info {
+          flex: 1;
+          padding: 0px 10px 0px 10px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 13px;
+          font-weight: 600; }
+          .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .transaction-list-HEX_val {
+            font-size: 12px;
+            color: #48a3ff;
+            margin-top: 5px;
+            margin-bottom: 5px; }
+          .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .transaction_first_row {
+            display: flex;
+            align-items: center; }
+            .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .transaction_first_row .block-list-detail-id {
+              width: 130px; }
+            .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .transaction_first_row .trasaction-list-id-col {
+              flex: 1;
+              display: flex;
+              justify-content: flex-end; }
+              .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .transaction_first_row .trasaction-list-id-col .trasaction-list-id-img {
+                margin-right: 10px; }
+              .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .transaction_first_row .trasaction-list-id-col .trasaction-list-id {
+                padding-top: 3px;
+                width: 50px;
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: #1343b4; }
+            .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .transaction_first_row .block-list-detail-date {
+              font-size: 12px;
+              font-weight: 600;
+              color: #7a7a7a; }
+          .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .block-detail-firstLine {
+            display: flex; }
+            .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .block-detail-firstLine .block-list-detail-HEX_val {
+              font-size: 10px;
+              color: #48a3ff;
+              margin-right: 20px; }
+            .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .block-detail-firstLine .block-list-detail-percent {
+              font-size: 11px;
+              font-weight: 600;
+              display: flex;
+              margin-left: 20px;
+              color: #48a3ff; }
+          .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .block-list-detail-info {
+            font-size: 9px;
+            color: #7a7a7a;
+            margin-left: -10px;
+            display: flex;
+            font-weight: 600; }
+            .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .block-list-detail-info span {
+              color: #48a3ff;
+              padding-left: 10px;
+              padding-right: 3px; }
+            .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .block-list-detail-info .detail1 {
+              color: #48a3ff;
+              padding-left: 3px;
+              padding-right: 3px; }
+            .formview-wrapper .form-wrapper .form-details-wrapper .detail-card .card-info .block-list-detail-info .block-list-detail-usedInfo {
+              display: flex;
+              font-size: 10px;
+              flex: 1;
+              justify-content: flex-end; }

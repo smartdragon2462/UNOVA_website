@@ -1,0 +1,49 @@
+.wrapper {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px; }
+  .wrapper aside.decoration {
+    justify-content: center;
+    padding-top: 10px; }
+  .wrapper aside + section {
+    padding-left: 15px; }
+  .wrapper aside {
+    flex-basis: 220px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; }
+  .wrapper .transactions__nav {
+    display: flex;
+    align-items: baseline; }
+    .wrapper .transactions__nav .date__form {
+      margin-left: 10px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: baseline; }
+  .wrapper section > .title {
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 12px;
+    line-height: .75rem;
+    text-transform: uppercase;
+    color: #9198bb;
+    font-weight: 500;
+    margin-bottom: 30px; }
+  .wrapper section > div {
+    flex: 1 1; }
+  .wrapper .transactions_list .list__element:not(:last-child) .timeline .timeline_icon:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    margin-left: -1px;
+    transform: translateY(-50%);
+    background: #48a3ff; }

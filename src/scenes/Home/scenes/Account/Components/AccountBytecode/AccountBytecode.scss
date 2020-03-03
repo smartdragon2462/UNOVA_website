@@ -1,0 +1,96 @@
+.AccountBytecode {
+    margin-top: -30px;
+    background: #fff;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+
+    // .value {
+    //     line-height: 1.5;
+    //     word-break: break-all;
+    // }
+    .wrapper{
+        background: white;
+        width: 100%;
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 0 30px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+        
+
+        .keyValue {
+            flex: 1 1;
+            padding-right: 30px;
+            // margin-bottom: 30px;
+            position: relative;
+
+            .key {
+                font-size: 11px;
+                text-transform: uppercase;
+                color: #9198bb!important;
+                font-weight: 500;
+                margin-bottom: 10px!important;
+                max-width: 100%;
+            }
+            .ShowMore .value.show-more {
+                height: 100px;
+                overflow: hidden;
+            }
+            .ShowMore button {
+                font-size: 13px;
+                color: #0042ba;
+                cursor: pointer;
+                margin-top: 5px;
+                padding: 0px 0;
+            }
+            .AccountBytecode .value {
+                line-height: 1.5;
+                word-break: break-all;
+            }
+            .value {
+                line-height: 1.5;
+                word-break: break-all;
+
+                font-size: 13px;
+                font-size: .8125rem;
+                line-height: 13px;
+                line-height: .8125rem;
+                cursor: default;
+                position: relative;
+                display: inline-block;
+                color: #333;
+                margin: 0!important;
+                min-height: 16px;
+                max-width: 100%;
+            }
+        }
+    }
+
+    
+}
+
+
+// aside.decoration {
+//     justify-content: center;
+// }
+
+// aside {
+//     flex-basis: 220px;
+//     display: flex;
+//     align-items: flex-start;
+//     justify-content: flex-start;
+// }
+
+// button {
+//     overflow: visible;
+//     text-transform: none;
+// }
+
+// button, input, select, textarea {
+//     font-family: inherit;
+//     font-size: inherit;
+//     line-height: inherit;
+// }

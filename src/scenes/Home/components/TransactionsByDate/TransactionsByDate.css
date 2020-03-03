@@ -1,0 +1,68 @@
+.date__input, .date__submit {
+  font-size: 12px;
+  padding: 0;
+  margin: 0; }
+
+.date__submit {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  padding: 2px 5px;
+  min-width: 0;
+  border-radius: 3px;
+  margin-left: 5px; }
+
+.date__form .AMB-CalendarInput {
+  max-width: 100px; }
+
+.date__form .AMB-CalendarInput .input {
+  width: 100px; }
+
+.date__form .AMB-CalendarInput input {
+  background: #fff url("../../assets/icons/calendar.png") 97% 50% no-repeat;
+  padding: 2px; }
+
+.date__form .AMB-Input {
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end; }
+
+.date__form .AMB-Input > .input input {
+  padding: 2px; }
+
+.AMB-Button.solid {
+  color: #0042ba;
+  border: 1px solid #0042ba;
+  background: #ffffff;
+  border-radius: 0px;
+  min-width: 111px;
+  padding: 4px 3px; }
+
+.calendar {
+  overflow: hidden;
+  max-width: 350px;
+  left: -155px; }
+
+.date__form {
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline; }
+
+.date__form .download__impossible {
+  cursor: default;
+  color: #bebebe;
+  border-color: #bebebe; }
+
+@media (max-width: 700px) {
+  .date__form {
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: flex-start; }
+  .date__form .AMB-CalendarInput {
+    max-width: 100px; }
+  .date__form .AMB-Input {
+    justify-content: flex-start; }
+  .calendar {
+    width: 280px;
+    left: 0; } }

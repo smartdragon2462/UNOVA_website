@@ -1,0 +1,129 @@
+.TransactionInfo {
+  padding: 40px 0;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  background: white; }
+  .TransactionInfo .wrapper_info {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff; }
+    .TransactionInfo .wrapper_info section {
+      flex: 1 1;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%; }
+    .TransactionInfo .wrapper_info aside {
+      flex-basis: 220px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start; }
+    .TransactionInfo .wrapper_info aside.decoration {
+      justify-content: center; }
+    .TransactionInfo .wrapper_info aside + section {
+      padding-left: 15px; }
+
+.TransactionInfo section {
+  justify-content: space-between;
+  position: relative; }
+
+.TransactionInfo section > div {
+  flex-grow: 0; }
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .TransactionInfo section {
+    display: block;
+    text-align: center; }
+  .TransactionInfo section > div {
+    display: inline-block;
+    text-align: left;
+    width: 20%; }
+  .TransactionInfo section > div.from, .TransactionInfo section > div.to {
+    float: left;
+    width: 40%; }
+  .TransactionInfo section > div.to {
+    float: right;
+    text-align: left; } }
+
+.TransactionInfo .transition {
+  text-align: center;
+  white-space: nowrap;
+  position: relative; }
+
+@media only screen and (min-width: 801px) {
+  .TransactionInfo .transition {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); } }
+
+@media only screen and (max-width: 800px) {
+  .TransactionInfo .transition {
+    text-align: left;
+    padding: 50px; }
+  .TransactionInfo .transition .icon {
+    transform: rotate(90deg);
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -5px; } }
+
+.TransactionInfo .transition svg {
+  width: 20px;
+  height: 10px; }
+
+.TransactionInfo .transition .value_amb {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin: 10px 0; }
+
+.TransactionInfo .transition .value_amb span {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 18px;
+  line-height: 1.125rem; }
+
+.TransactionInfo .transition .value_usd {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  line-height: 11px;
+  line-height: 0.6875rem;
+  color: #9198BB; }
+
+.TransactionInfo .from .label, .TransactionInfo .to .label {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 12px;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+  color: #9198BB;
+  font-weight: 500; }
+
+.TransactionInfo .from .address, .TransactionInfo .to .address {
+  margin: 20px 0 10px; }
+
+.TransactionInfo .from .address a, .TransactionInfo .to .address a {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 13px;
+  line-height: 0.8125rem;
+  color: #0042BA;
+  text-decoration: none; }
+
+.TransactionInfo .from .balance, .TransactionInfo .to .balance {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  line-height: 11px;
+  line-height: 0.6875rem;
+  font-weight: 400;
+  color: #9198BB; }
+
+@media only screen and (max-width: 800px) {
+  .TransactionInfo .to {
+    margin-bottom: 0; } }

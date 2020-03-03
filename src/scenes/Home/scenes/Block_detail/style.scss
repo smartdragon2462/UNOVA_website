@@ -1,0 +1,212 @@
+.formview-wrapper{
+    display: flex;
+    flex-direction: column;
+    .blocks_detail-informs-wrapper{
+        display: flex;
+        top: 0;
+        width: 100%;
+        padding:120px 100px 40px 100px;
+        background-image: url("/assets/images/background1.png");
+        color: white;
+        .blocks_detail-header-info-group{
+            margin-left: 30px;
+            font-family: 'Montserrat', sans-serif;
+            .blocks_detail-header-infos{
+                display: flex;
+                .blocks_detail-header-info-items{
+                    margin-right: 30px;;
+
+                    .blocks_detail-header-info-title{                        
+                        font-size: 9px;
+                        color: rgb(194, 194, 194);
+                    }
+                    .blocks_detail-header-info-val{
+                        margin-top: 3px;
+                        font-size: 12px;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                    }
+                    .blocks_detail-header-info-val1{
+                        margin-top: 3px;
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: #0ac869;
+                    }
+                }
+            }
+        }
+        
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            span{
+                color: #4f8ef4;
+
+            }
+        }
+
+        h7{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        h6{
+            margin-top: 60px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+        }   
+    }
+    .form-wrapper{
+        position: relative;
+        .form-tabs-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: absolute;
+            top: -35px;
+            padding: 0px 100px;
+            width: 100%;
+            .tab-item{
+                margin: auto;
+                padding:15px;
+                border-radius: 10px;
+                background-color: white;
+                box-shadow: 0px 2px 3px rgba(0,0,0,.1);
+                font-family: 'Montserrat', sans-serif;
+                font-size: 13px;              
+               
+            }
+            .tab-item:first-child{
+                margin-left: 0px;
+                margin: inherit;
+            }
+            .tab-item:last-child{
+                margin-right:0px;
+            }
+            
+        }
+        .blocks_detail-list-title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: rgb(66, 63, 63);
+            margin-bottom: 10px;
+        }
+
+        .blocks_detail_all-block-list-group{
+            padding: 25px 100px 10px 100px; 
+            background: rgb(255, 255, 255);
+            .detail-card{
+                display: flex;
+                margin-bottom: 10px;
+                position: relative;
+                .decoration{
+                    .timeline{
+                        padding: 25px;
+                        padding-top: 15px;
+                        .timeline_icon{
+                            background: transparent;
+                        }
+                    }
+                }   
+                .detail_contents {
+                    margin-top: 15px;
+                }
+                .blocks_detail-hash-info{
+                    display: flex;
+                    padding: 0px 10px 0px 10px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 9px;
+                    font-weight: 600;
+                    
+                    .blocks_detail-hash-content{
+                        margin-right: 80px;
+                        .hash-title{
+                            color: rgb(170, 170, 170);
+                        }
+                        .hash-value{
+                            color: #48a3ff;
+                        }
+                        .hash-value1{
+                            color: #070707;
+                        }
+                    }
+                }
+
+                .blocks_detail-card-info{
+                    flex: 1;
+                    padding: 0px 10px 0px 10px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 13px;
+                    font-weight: 600;
+                    .progress {
+                        height: 0.15rem;
+                        margin-top: 15px;
+                    }
+                    .blocks_detail-list-detail-id{
+                       font-size: 9px;
+                       color: rgb(170, 170, 170);
+                       margin-top: 13px;
+                    }                       
+
+                    .blocks_detail-detail-firstLine{
+                        display: flex;
+                        .blocks_detail-list-detail-date{
+                            font-size: 10px;
+                            font-weight: 600;
+                            color: rgb(122, 122, 122);
+                            margin-left: 103px;
+                        }
+                        
+                        .blocks_detail-list-detail-HEX_val{
+                            font-size: 10px;
+                            color: #48a3ff;
+                            width: 220px;
+                        }
+                        .blocks_detail-list-detail-percent{
+                            font-size: 11px;
+                            font-weight: 600;
+                            display: flex;
+                            flex: 1;
+                            justify-content: flex-end;
+                        }
+                    }
+
+                    .blocks_detail-list-detail-info{
+                        font-size: 9px;
+                        color: rgb(122, 122, 122);
+                        display: flex;
+                        font-weight: 600;
+                        .block-miner-transaction{
+                            width: 320px;
+                        }
+                        span{                            
+                            color: #0836ce;     
+                            // padding-left: 2px;
+                            padding-right: 2px;                       
+                        }
+                        .detail1{
+                            color: #0836ce;     
+                            padding-right: 3px;                              
+                        }
+
+                        .usedInfo{
+                            color: rgb(190, 188, 188);
+                            display: flex;
+                            font-size: 10px;
+                            flex: 1;    
+                            justify-content: flex-end;
+                            span{
+                                color: rgb(190, 188, 188);
+                            }
+                        }
+                    }
+                    
+
+                }
+            }
+        }
+    }
+}

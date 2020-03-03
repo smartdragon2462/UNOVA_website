@@ -1,0 +1,137 @@
+    .transactions_list{
+        padding: 0px 100px 10px 65px;   
+        background: white;         
+        .detail-card:not(:last-child){
+            .decoration{
+                .timeline:before{
+                    content: "";
+                    display: block;
+                    width: 2px;
+                    height: 40%;
+                    position: absolute;
+                    top: 85%;
+                    left: 50%;
+                    margin-left: -1px;
+                    transform: translateY(-50%);
+                    background: #48a3ff;
+                }
+            }
+        }
+        .detail-card{
+            display: flex;
+            margin-bottom: 0px;
+            position: relative;;
+            .decoration{
+                justify-content: center;
+                display: flex;
+                .timeline{
+                    top: -20;
+                    position: relative;
+                }
+                .timeline_icon{
+                    position: relative;
+                    text-align: center;
+                    padding: 25px;
+                    background-color:transparent;
+                    padding-top: 15px;
+                }
+                .time_ago{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 8px;
+                    line-height: 0.6875rem;
+                    color: rgb(97, 97, 97);
+                    position: relative;
+                    top: -20px;
+                    text-align: center;
+                }
+            }
+            .card-info{
+                flex: 1;
+                padding: 12px 10px 0px 10px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                .transaction-list-HEX_val{
+                    font-size: 12px;
+                    color: #48a3ff;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                .transaction_first_row{
+                    display: flex;
+                    align-items: center;
+                    
+                    .status_icon{
+                        margin-right: 20px;
+                    }
+
+                    .block-list-detail-id{
+                        width: 130px;
+                    }
+                    .trasaction-list-id-col{
+                        flex: 1;
+                        display: flex;
+                        justify-content: flex-end;
+                        .trasaction-list-id-img{
+                            margin-right: 10px;
+                        }
+                        .trasaction-list-id{
+                            padding-top: 3px;
+                            width: 50px;
+                            font-size: 11px;
+                            font-weight: 600;
+                            letter-spacing: 1px;
+                            color: rgb(19, 67, 180);
+                        }
+                    }
+                    .block-list-detail-date{
+                        font-size: 12px;
+                        font-weight: 600;
+                        color: rgb(122, 122, 122);
+                    }
+                }
+                .block-detail-firstLine{
+                    display: flex;
+                    
+                    .block-list-detail-HEX_val{
+                        font-size: 10px;
+                        color: #48a3ff;
+                        margin-right:20px;
+                    }
+                    .block-list-detail-percent{
+                        font-size: 11px;
+                        font-weight: 600;
+                        display: flex;
+                        margin-left:20px;
+                        color: #48a3ff;
+                    }
+                }
+
+                .block-list-detail-info{
+                    font-size: 9px;
+                    color: rgb(122, 122, 122);
+                    margin-left: -10px;
+                    display: flex;
+                    font-weight: 600;
+                    span{                            
+                        color: #48a3ff;     
+                        padding-left: 10px;
+                        padding-right: 3px;                       
+                    }
+                    .detail1{
+                        color: #48a3ff;     
+                        padding-left: 3px;
+                        padding-right: 3px;                              
+                    }
+
+                    .block-list-detail-usedInfo{
+                        // color: rgb(190, 188, 188);
+                        display: flex;
+                        font-size: 10px;
+                        flex: 1;    
+                        justify-content: flex-end;
+                    }
+                }                   
+            }
+        }
+    }

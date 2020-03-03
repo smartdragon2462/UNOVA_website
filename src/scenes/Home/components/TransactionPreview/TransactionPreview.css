@@ -1,0 +1,192 @@
+.TransactionPreview .timeline {
+  top: -20px; }
+
+.TransactionPreview .data_tag {
+  display: flex; }
+  .TransactionPreview .data_tag:hover {
+    background: #fff; }
+  .TransactionPreview .data_tag a {
+    color: #0042BA; }
+  .TransactionPreview .data_tag:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 24px;
+    width: 42px;
+    height: 2px;
+    background: #9198BB; }
+  .TransactionPreview .data_tag.success:before {
+    background: #40D685; }
+  .TransactionPreview .data_tag.fail:before {
+    background: #D64040; }
+  @media only screen and (max-width: 620px) {
+    .TransactionPreview .data_tag {
+      flex-direction: column; } }
+
+.TransactionPreview .info {
+  width: 100%; }
+  @media only screen and (min-width: 501px) {
+    .TransactionPreview .info {
+      width: 80%; } }
+  @media only screen and (min-width: 1250px) {
+    .TransactionPreview .info {
+      white-space: nowrap;
+      width: 90%; } }
+  .TransactionPreview .info .header {
+    position: relative; }
+    @media only screen and (min-width: 901px) {
+      .TransactionPreview .info .header {
+        display: flex;
+        align-items: center; } }
+    .TransactionPreview .info .header .icon {
+      float: left;
+      position: relative;
+      top: 5px;
+      margin-right: 20px; }
+      @media only screen and (min-width: 901px) {
+        .TransactionPreview .info .header .icon {
+          display: none; } }
+    .TransactionPreview .info .header .title {
+      font-size: 15px;
+      font-size: calculateRem(15px);
+      line-height: 15px;
+      line-height: calculateRem(15px);
+      font-weight: 500;
+      color: #333333;
+      position: relative; }
+      @media only screen and (min-width: 901px) {
+        .TransactionPreview .info .header .title {
+          margin-right: 30px; } }
+    @media only screen and (min-width: 901px) {
+      .TransactionPreview .info .header .status_icon {
+        margin-right: 30px; } }
+    @media only screen and (max-width: 900px) {
+      .TransactionPreview .info .header .status_icon {
+        position: absolute;
+        right: 0;
+        top: 0; } }
+    .TransactionPreview .info .header .date {
+      font-size: 13px;
+      font-size: calculateRem(13px);
+      line-height: 15px;
+      line-height: calculateRem(15px);
+      color: #9198BB;
+      position: relative;
+      top: 1px; }
+      @media only screen and (max-width: 900px) {
+        .TransactionPreview .info .header .date {
+          margin-top: 5px; } }
+
+.TransactionPreview .pending .header .title {
+  color: #9198BB; }
+
+.TransactionPreview .details {
+  display: block;
+  position: relative; }
+  .TransactionPreview .details .from, .TransactionPreview .details .to {
+    font-size: 13px;
+    font-size: calculateRem(13px);
+    line-height: 13px;
+    line-height: calculateRem(13px);
+    color: #0042BA;
+    font-weight: 400; }
+    @media only screen and (max-width: 900px) {
+      .TransactionPreview .details .from, .TransactionPreview .details .to {
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 900px) and (max-width: 1250px) {
+      .TransactionPreview .details .from, .TransactionPreview .details .to {
+        width: 46%; } }
+  @media only screen and (max-width: 900px) {
+    .TransactionPreview .details .to {
+      padding-left: 30px; } }
+  .TransactionPreview .details .arrow {
+    text-align: center; }
+    @media only screen and (max-width: 900px) {
+      .TransactionPreview .details .arrow {
+        position: absolute;
+        left: 0;
+        bottom: 0; } }
+  @media only screen and (min-width: 901px) {
+    .TransactionPreview .details > div {
+      display: inline-block; }
+      .TransactionPreview .details > div.arrow {
+        width: 8%; } }
+
+.TransactionPreview .hash {
+  font-size: 13px;
+  font-size: calculateRem(13px);
+  line-height: 13px;
+  line-height: calculateRem(13px);
+  font-weight: 400;
+  margin: 20px 0 10px;
+  color: #333333; }
+  @media only screen and (max-width: 900px) {
+    .TransactionPreview .hash {
+      margin-bottom: 20px; } }
+
+.TransactionPreview .block {
+  text-align: right;
+  position: relative;
+  flex: 1; }
+  .TransactionPreview .block .number {
+    font-size: 12px;
+    font-size: calculateRem(12px);
+    line-height: 12px;
+    line-height: calculateRem(12px);
+    color: #9198BB;
+    padding-left: 30px;
+    display: inline-block; }
+    @media only screen and (min-width: 901px) {
+      .TransactionPreview .block .number {
+        right: 0;
+        top: 0;
+        position: absolute; } }
+    @media only screen and (max-width: 900px) {
+      .TransactionPreview .block .number {
+        font-size: 13px;
+        font-size: calculateRem(13px);
+        line-height: 13px;
+        line-height: calculateRem(13px); } }
+    @media only screen and (max-width: 620px) {
+      .TransactionPreview .block .number {
+        text-align: left;
+        padding-left: 0; } }
+    .TransactionPreview .block .number img {
+      width: 20px;
+      margin-right: 10px;
+      height: 21px; }
+      @media only screen and (min-width: 901px) {
+        .TransactionPreview .block .number img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0; } }
+      .TransactionPreview .block .number img path {
+        fill: #9198BB; }
+    .TransactionPreview .block .number a {
+      font-size: inherit; }
+  .TransactionPreview .block .priceAMB {
+    font-size: 15px;
+    font-size: calculateRem(15px);
+    line-height: 15px;
+    line-height: calculateRem(15px);
+    font-weight: 500;
+    color: #00B7F9; }
+    .TransactionPreview .block .priceAMB.sent {
+      color: #333; }
+    @media only screen and (max-width: 620px) {
+      .TransactionPreview .block .priceAMB {
+        padding-right: 10px; } }
+  .TransactionPreview .block .priceUSD {
+    font-size: 11px;
+    font-size: calculateRem(11px);
+    line-height: 11px;
+    line-height: calculateRem(11px);
+    color: #9198BB;
+    padding: 5px 0; }
+  @media only screen and (max-width: 620px) {
+    .TransactionPreview .block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; } }

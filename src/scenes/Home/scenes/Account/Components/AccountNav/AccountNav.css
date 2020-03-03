@@ -1,0 +1,136 @@
+.AccountNav .decoration .page_logo__icon svg path {
+  fill: #fff; }
+
+.AccountNav .title > span {
+  opacity: 0.5; }
+
+.AccountNav .wrapper_nav .info h1 {
+  letter-spacing: -2px; }
+
+@media only screen and (max-width: 1200px) {
+  .AccountNav .info .stats .point {
+    width: 100%; } }
+
+.AccountNav .info .stats .point.address {
+  flex: 1; }
+
+.AccountNav .info .stats .point.address .value span {
+  margin-left: 0; }
+
+.AccountNav .info .stats .point.address .value .clipboard {
+  position: relative;
+  margin-left: 30px; }
+
+@media only screen and (max-width: 700px) {
+  .AccountNav .info .stats .point.address .value .clipboard {
+    display: block;
+    margin-left: 0;
+    top: 20px; }
+  .AccountNav .info .stats .point.address .value .clipboard svg {
+    width: 24px;
+    height: 24px; } }
+
+.App .Content > * {
+  overflow: hidden; }
+
+@media only screen and (max-width: 1024px) {
+  .AccountNav .sub-header {
+    padding: 20px 0 0; } }
+
+@media only screen and (max-width: 1275px) {
+  .AccountNav .sub-header {
+    padding: 40px 0 20px; } }
+
+.AccountNav .sub-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4f299b), to(#122283));
+  background: linear-gradient(180deg, #4f299b 0, #122283);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF4F299B",endColorstr="#FF122283",GradientType=0);
+  position: relative;
+  color: #fff;
+  cursor: auto;
+  margin-bottom: 50px; }
+
+.AccountNav .wrapper_nav {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("/assets/images/background1.png");
+  padding-top: 120px; }
+  .AccountNav .wrapper_nav .info {
+    flex: 1 1;
+    font-family: 'Montserrat', sans-serif;
+    color: white; }
+    .AccountNav .wrapper_nav .info h1 {
+      font-size: 40px; }
+    .AccountNav .wrapper_nav .info .stats {
+      padding: 20px 0; }
+      .AccountNav .wrapper_nav .info .stats .point.address {
+        flex: 1 1; }
+      @media only screen and (max-width: 1200px) {
+        .AccountNav .wrapper_nav .info .stats .AccountNav .info .stats .point {
+          width: 100%; } }
+      @media screen and (max-width: 1275px) and (min-width: 700px) {
+        .AccountNav .wrapper_nav .info .stats .point {
+          display: inline-block;
+          width: 50%;
+          margin: 20px 0 30px; } }
+      .AccountNav .wrapper_nav .info .stats .point {
+        position: relative;
+        text-transform: capitalize; }
+        .AccountNav .wrapper_nav .info .stats .point .key {
+          font-size: 12px;
+          font-size: .75rem;
+          line-height: 12px;
+          line-height: .75rem;
+          font-weight: 500;
+          color: #9198bb;
+          text-transform: uppercase; }
+        .AccountNav .wrapper_nav .info .stats .point h4.value {
+          font-size: 15px;
+          line-height: 5px;
+          line-height: 1.375rem;
+          cursor: default;
+          font-weight: 600;
+          margin-top: 10px;
+          position: relative;
+          white-space: nowrap; }
+          .AccountNav .wrapper_nav .info .stats .point h4.value .AccountNav .info .stats .point.address .value .clipboard {
+            position: relative;
+            margin-left: 30px; }
+          .AccountNav .wrapper_nav .info .stats .point h4.value .clipboard {
+            cursor: pointer; }
+        @media only screen and (max-width: 1024px) {
+          .AccountNav .wrapper_nav .info .stats .point h4.value {
+            font-size: 15px;
+            line-height: 20px;
+            line-height: 1.25rem; } }
+  .AccountNav .wrapper_nav aside.decoration {
+    justify-content: center; }
+  @media only screen and (max-width: 1024px) {
+    .AccountNav .wrapper_nav aside {
+      flex-basis: 150px; }
+      .AccountNav .wrapper_nav aside .page_logo {
+        display: inline-block;
+        position: relative;
+        top: -25px; } }
+  .AccountNav .wrapper_nav aside {
+    flex-basis: 220px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; }
+  .AccountNav .wrapper_nav aside.decoration.page_logo {
+    display: inline-block;
+    position: relative;
+    top: -25px; }
+    .AccountNav .wrapper_nav aside.decoration.page_logo .page_logo__icon.fadeIn {
+      -webkit-animation: fadeIn .8s forwards;
+      animation: fadeIn .8s forwards; }
+    .AccountNav .wrapper_nav aside.decoration.page_logo .page_logo__icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate3d(-50%, -50%, 0);
+      transform: translate3d(-50%, -50%, 0); }

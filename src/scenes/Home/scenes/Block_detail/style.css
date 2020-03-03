@@ -1,0 +1,153 @@
+.formview-wrapper {
+  display: flex;
+  flex-direction: column; }
+  .formview-wrapper .blocks_detail-informs-wrapper {
+    display: flex;
+    top: 0;
+    width: 100%;
+    padding: 120px 100px 40px 100px;
+    background-image: url("/assets/images/background1.png");
+    color: white; }
+    .formview-wrapper .blocks_detail-informs-wrapper .blocks_detail-header-info-group {
+      margin-left: 30px;
+      font-family: 'Montserrat', sans-serif; }
+      .formview-wrapper .blocks_detail-informs-wrapper .blocks_detail-header-info-group .blocks_detail-header-infos {
+        display: flex; }
+        .formview-wrapper .blocks_detail-informs-wrapper .blocks_detail-header-info-group .blocks_detail-header-infos .blocks_detail-header-info-items {
+          margin-right: 30px; }
+          .formview-wrapper .blocks_detail-informs-wrapper .blocks_detail-header-info-group .blocks_detail-header-infos .blocks_detail-header-info-items .blocks_detail-header-info-title {
+            font-size: 9px;
+            color: #c2c2c2; }
+          .formview-wrapper .blocks_detail-informs-wrapper .blocks_detail-header-info-group .blocks_detail-header-infos .blocks_detail-header-info-items .blocks_detail-header-info-val {
+            margin-top: 3px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px; }
+          .formview-wrapper .blocks_detail-informs-wrapper .blocks_detail-header-info-group .blocks_detail-header-infos .blocks_detail-header-info-items .blocks_detail-header-info-val1 {
+            margin-top: 3px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #0ac869; }
+    .formview-wrapper .blocks_detail-informs-wrapper h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      font-weight: 600; }
+      .formview-wrapper .blocks_detail-informs-wrapper h2 span {
+        color: #4f8ef4; }
+    .formview-wrapper .blocks_detail-informs-wrapper h7 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 600; }
+    .formview-wrapper .blocks_detail-informs-wrapper h6 {
+      margin-top: 60px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 600; }
+  .formview-wrapper .form-wrapper {
+    position: relative; }
+    .formview-wrapper .form-wrapper .form-tabs-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: absolute;
+      top: -35px;
+      padding: 0px 100px;
+      width: 100%; }
+      .formview-wrapper .form-wrapper .form-tabs-wrapper .tab-item {
+        margin: auto;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px; }
+      .formview-wrapper .form-wrapper .form-tabs-wrapper .tab-item:first-child {
+        margin-left: 0px;
+        margin: inherit; }
+      .formview-wrapper .form-wrapper .form-tabs-wrapper .tab-item:last-child {
+        margin-right: 0px; }
+    .formview-wrapper .form-wrapper .blocks_detail-list-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #423f3f;
+      margin-bottom: 10px; }
+    .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group {
+      padding: 25px 100px 10px 100px;
+      background: white; }
+      .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card {
+        display: flex;
+        margin-bottom: 10px;
+        position: relative; }
+        .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .decoration .timeline {
+          padding: 25px;
+          padding-top: 15px; }
+          .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .decoration .timeline .timeline_icon {
+            background: transparent; }
+        .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .detail_contents {
+          margin-top: 15px; }
+        .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-hash-info {
+          display: flex;
+          padding: 0px 10px 0px 10px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 9px;
+          font-weight: 600; }
+          .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-hash-info .blocks_detail-hash-content {
+            margin-right: 80px; }
+            .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-hash-info .blocks_detail-hash-content .hash-title {
+              color: #aaaaaa; }
+            .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-hash-info .blocks_detail-hash-content .hash-value {
+              color: #48a3ff; }
+            .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-hash-info .blocks_detail-hash-content .hash-value1 {
+              color: #070707; }
+        .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-card-info {
+          flex: 1;
+          padding: 0px 10px 0px 10px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 13px;
+          font-weight: 600; }
+          .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-card-info .progress {
+            height: 0.15rem;
+            margin-top: 15px; }
+          .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-card-info .blocks_detail-list-detail-id {
+            font-size: 9px;
+            color: #aaaaaa;
+            margin-top: 13px; }
+          .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-card-info .blocks_detail-detail-firstLine {
+            display: flex; }
+            .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-card-info .blocks_detail-detail-firstLine .blocks_detail-list-detail-date {
+              font-size: 10px;
+              font-weight: 600;
+              color: #7a7a7a;
+              margin-left: 103px; }
+            .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-card-info .blocks_detail-detail-firstLine .blocks_detail-list-detail-HEX_val {
+              font-size: 10px;
+              color: #48a3ff;
+              width: 220px; }
+            .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-card-info .blocks_detail-detail-firstLine .blocks_detail-list-detail-percent {
+              font-size: 11px;
+              font-weight: 600;
+              display: flex;
+              flex: 1;
+              justify-content: flex-end; }
+          .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-card-info .blocks_detail-list-detail-info {
+            font-size: 9px;
+            color: #7a7a7a;
+            display: flex;
+            font-weight: 600; }
+            .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-card-info .blocks_detail-list-detail-info .block-miner-transaction {
+              width: 320px; }
+            .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-card-info .blocks_detail-list-detail-info span {
+              color: #0836ce;
+              padding-right: 2px; }
+            .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-card-info .blocks_detail-list-detail-info .detail1 {
+              color: #0836ce;
+              padding-right: 3px; }
+            .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-card-info .blocks_detail-list-detail-info .usedInfo {
+              color: #bebcbc;
+              display: flex;
+              font-size: 10px;
+              flex: 1;
+              justify-content: flex-end; }
+              .formview-wrapper .form-wrapper .blocks_detail_all-block-list-group .detail-card .blocks_detail-card-info .blocks_detail-list-detail-info .usedInfo span {
+                color: #bebcbc; }

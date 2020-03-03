@@ -1,0 +1,214 @@
+// main {
+//     background: #eeeef3;
+// }
+div {
+    display: block;
+}
+
+section {
+    flex: 1 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+aside {
+    flex-basis: 220px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.card {
+    border-radius: 4px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(145,152,187,.25);
+    padding: 25px;
+}
+aside+section {
+    padding-left: 15px;
+}
+
+
+
+.list__element {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+    
+    aside.decoration {
+        justify-content: center;
+    }
+    section {
+        margin-left: -25px;
+    }
+
+    section>div {
+        flex: 0 1;
+    }
+    .success {
+        color: #40d685!important;
+    }
+    
+    .timeline {
+        .timeline_icon {
+            position: relative;
+            padding: 30px;
+            background: transparent;
+            text-align: center;
+
+            .timeline:before{
+                content: "";
+                display: block;
+                width: 2px;
+                height: 100%;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -1px;
+                transform: translateY(-50%);
+                background: #48a3ff;
+            }
+            .timelime_icon_header{
+                padding-top: 13px;
+            }    
+        }
+        .time_ago {
+            font-size: 11px;
+            font-size: 0.6875rem;
+            line-height: 11px;
+            line-height: 0.6875rem;
+            color: #9198bb;
+            position: relative;
+            top: -25px;
+            text-align: center;
+        }
+    }
+}
+
+.TransactionPreview {
+    .data_tag {
+        display: flex;       
+    }
+    .info {
+        width: 100%;
+        @media only screen and (min-width: 901px) {
+            .header {
+                display: flex;
+                align-items: center;
+            }
+        }
+        .header {
+            position: relative;
+            .icon {
+                float: left;
+                position: relative;
+                top: 5px;
+                margin-right: 20px;
+            }
+            @media only screen and (min-width: 901px) {
+                .icon {
+                    display: none;
+                }
+            }
+            @media only screen and (min-width: 901px) {
+                .status_icon,
+                .title {
+                    margin-right: 30px;
+                }
+            }
+            .title {
+                font-size: 15px;
+                font-size: 0.9375rem;
+                line-height: 15px;
+                line-height: 0.9375rem;
+                font-weight: 500;
+                color: #333;
+                position: relative;
+            }
+            @media only screen and (min-width: 901px) {
+                .status_icon,
+                .title {
+                    margin-right: 30px;
+                }
+            }
+            .date {
+                font-size: 13px;
+                font-size: 0.8125rem;
+                line-height: 15px;
+                line-height: 0.9375rem;
+                color: #9198bb;
+                position: relative;
+                top: 1px;
+            }
+        }
+    }
+
+    .hash {
+        font-size: 13px;
+        font-size: 0.8125rem;
+        line-height: 13px;
+        line-height: 0.8125rem;
+        font-weight: 400;
+        margin: 20px 0 10px;
+        color: #333;
+    }
+    .details {
+        display: block;
+        position: relative;
+        .from,
+        .to {
+            font-size: 13px;
+            font-size: 0.8125rem;
+            line-height: 13px;
+            line-height: 0.8125rem;
+            color: #0042ba;
+            font-weight: 400;
+        }
+        .arrow {
+            text-align: center;
+        }
+    }
+}
+@media only screen and (min-width: 901px) {
+    .TransactionPreview .details > div {
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 1250px) and (min-width: 900px) {
+    .TransactionPreview .details .from,
+    .TransactionPreview .details .to {
+        width: 46%;
+    }
+}
+@media only screen and (min-width: 501px) {
+    .TransactionPreview .info {
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 901px) {
+    .TransactionPreview .details > div.arrow {
+        width: 8%;
+    }
+}
+@media only screen and (min-width: 901px) {
+    .TransactionPreview .details > div {
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 1250px) and (min-width: 900px) {
+    .TransactionPreview .details .from,
+    .TransactionPreview .details .to {
+        width: 46%;
+    }
+}
+@media only screen and (min-width: 901px) {
+    .TransactionPreview .block {
+        height: 100%;
+        // flex-basis: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}

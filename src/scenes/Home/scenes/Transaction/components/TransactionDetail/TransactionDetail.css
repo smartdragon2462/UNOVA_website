@@ -1,0 +1,69 @@
+.TransactionDetails {
+  padding-top: 50px;
+  background: #eeeef3;
+  padding-bottom: 50px; }
+  .TransactionDetails .wrapper_detail {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; }
+    .TransactionDetails .wrapper_detail aside.decoration {
+      justify-content: center; }
+    .TransactionDetails .wrapper_detail aside {
+      flex-basis: 220px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start; }
+    .TransactionDetails .wrapper_detail aside + section {
+      padding-left: 15px; }
+    .TransactionDetails .wrapper_detail section {
+      flex: 1 1;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%; }
+    .TransactionDetails .wrapper_detail section .row {
+      flex: 1 0 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      .TransactionDetails .wrapper_detail section .row .keyValue.small {
+        flex-basis: 270px;
+        flex-grow: 0; }
+      .TransactionDetails .wrapper_detail section .row .keyValue {
+        flex: 1 1;
+        padding-right: 30px;
+        margin-bottom: 30px;
+        position: relative; }
+      .TransactionDetails .wrapper_detail section .row .keyValue .key {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #9198bb !important;
+        font-weight: 500;
+        margin-bottom: 10px !important;
+        max-width: 100%; }
+      .TransactionDetails .wrapper_detail section .row .keyValue .value {
+        font-size: 13px;
+        font-size: .8125rem;
+        line-height: 13px;
+        line-height: .8125rem;
+        cursor: default;
+        position: relative;
+        display: inline-block;
+        color: #333;
+        margin: 0 !important;
+        min-height: 16px;
+        max-width: 100%; }
+    .TransactionDetails .wrapper_detail section > div {
+      flex: 1 1; }
+
+@media only screen and (max-width: 1100px) {
+  .TransactionDetails .hash {
+    flex: 1 0 100%; } }
+
+.TransactionDetails .status .value {
+  text-transform: uppercase; }
+
+.TransactionDetails .input_data {
+  word-break: break-all; }

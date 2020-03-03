@@ -1,0 +1,150 @@
+.headerBar{
+    padding:0px 100px;
+    position: absolute;;
+    top: 0px;
+    z-index: 9999;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    .header{
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .header-wrapper{
+            display: flex;
+            width: 100%;
+            .logo{
+                font-size: 30px;
+                font-weight: bold;
+                flex: 1;
+                a{
+                    color: white;
+                }
+                a:hover{
+                    text-decoration: none;
+                }
+
+                .logo-img{
+                    width: 100%;
+                    background-image: url("/assets/images/UNOVA_logo.png");
+                }                
+            }
+            .menu{
+                padding:8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    color: white;
+                    &:hover{
+                        font-weight: bold;
+                    }
+                }
+                .item{
+                    margin: 0px 20px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 12px;
+                }
+                .selected{
+                    font-weight: bold;
+                }
+                .search-box{
+                    margin-left: 20px;
+                    padding: 1px 15px;
+                    border-radius: 11px;
+                    background-color: white;
+                    width: 300px;
+                    display: flex;
+                    input{
+                        width: 100%;
+                        outline: none;
+                        border: none;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 12px;
+                    }
+                    img{
+                        color: lightgray;
+                        opacity: 0.3;
+                    }
+                }
+            }
+        }
+    }
+    hr{
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 768px) {  
+    .headerBar{
+        padding:0px 5%;
+        position:fixed;
+        top: 0px;
+        z-index: 9999;
+        width: 100%;
+        background-color: white;
+        .header{
+            padding: 10px 0px;
+            display: flex;
+            align-items: center;
+            .header-wrapper{
+                display: flex;
+                .logo{
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: black;
+                    a{
+                        color: black;
+                    }
+                    a:hover{
+                        text-decoration: none;
+                    }
+                }
+                .menu{
+                    display: none;
+                }
+                .right-helper{
+                    display:none;
+                }
+                .mobile-menu{
+                    display: block;
+                    transition: all ease 0.4s;
+                    .menu-icon{
+                        transition: all ease 0.4s;
+                        position: absolute;
+                        right: 5%;
+                        font-size: 30px;
+                    }
+                   .menu-wrapper{
+                       transition: all ease 0.4s;
+                       display: block;
+                       position: fixed;
+                       left: 0;
+                       top:10vh;
+                       width: 90%;
+                       margin: 0 5%;
+                       height: 90vh;
+                       padding-top: 20px;
+                       background-color:#f0f2f3;
+                       border-radius: 10px;
+                       
+                        .item{
+                            text-align: center;
+                            font-size: 24px;
+                            font-weight: bold;
+                        }
+                   }
+                   .menu-wrapper.open{
+                       left: 0px;
+                   }
+                   .menu-wrapper.hide{
+                        left: -100vh;
+                   }
+                }
+            }
+        }
+        hr{
+            margin: 0;
+        }
+    }
+}

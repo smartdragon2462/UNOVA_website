@@ -1,0 +1,296 @@
+
+@mixin breakpoint-min($size) {
+    @media only screen and (min-width: $size + px) {
+        @content;
+    }
+}
+@mixin font-size($size, $line_height: "") {
+    font-size: $size;
+    font-size: calculateRem($size);
+
+    @if $line_height != "" {
+        line-height: $line_height;
+        line-height: calculateRem($line_height);
+    }
+}
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@mixin breakpoint-between($sizeMin, $sizeMax) {
+    @media screen and (min-width: $sizeMin + px) and (max-width: $sizeMax + px) {
+        @content;
+    }
+}
+
+@mixin breakpoint($size) {
+    @if $size == desktop {
+        @media only screen and (min-width: 1200px) {
+            @content;
+        }
+    }
+    @else if $size == tablet-landscape {
+        @media only screen and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @else if $size == tablet-portrait {
+        @media only screen and (max-width: 900px) {
+            @content;
+        }
+    }
+    @else if $size == phone {
+        @media only screen and (max-width: 599px) {
+            @content;
+        }
+    }
+    @else {
+        @media only screen and (max-width: $size + px) {
+            @content;
+        }
+    }
+}
+
+
+$light-blue: #00b7f9;
+
+.TransactionPreview {
+    .timeline {
+        top: -20px;
+    }
+
+    .data_tag {
+        display: flex;
+        &:hover {
+            background: #fff;
+        }
+
+        a {
+            color: #0042BA;
+        }
+        &:before {
+            @include pseudo;
+
+            top: 0;
+            left: 24px;
+            width: 42px;
+            height: 2px;
+            background: #9198BB;
+        }
+
+        &.success {
+            &:before {
+                background: #40D685;
+            }
+        }
+
+        &.fail {
+            &:before {
+                background: #D64040;
+            }
+        }
+        @include breakpoint(620) {
+            flex-direction: column;
+        }
+    }
+
+    .info {
+        width: 100%;
+        @include breakpoint-min(501) {
+            width: 80%;
+        }
+        @include breakpoint-min(1250) {
+            white-space: nowrap;
+            width: 90%;
+        }
+
+        .header {
+            position: relative;
+            @include breakpoint-min(901) {
+                display: flex;
+                align-items: center;
+            }
+
+            .icon {
+                float: left;
+                position: relative;
+                top: 5px;
+                margin-right: 20px;
+                @include breakpoint-min(901) {
+                    display: none;
+                }
+            }
+
+            .title {
+                @include font-size(15px, 15px);
+
+                font-weight: 500;
+                color: #333333;
+                position: relative;
+                @include breakpoint-min(901) {
+                    margin-right: 30px;
+                }
+            }
+
+            .status_icon {
+                @include breakpoint-min(901) {
+                    margin-right: 30px;
+                }
+                @include breakpoint(900) {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+
+            .date {
+                @include font-size(13px, 15px);
+
+                color: #9198BB;
+                position: relative;
+                top: 1px;
+                @include breakpoint(900) {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    .pending {
+        .header {
+            .title {
+                color: #9198BB;
+            }
+        }
+    }
+
+    .details {
+        display: block;
+        position: relative;
+
+        .from {
+            @include font-size(13px, 13px);
+
+            color: #0042BA;
+            font-weight: 400;
+            @include breakpoint(900) {
+                margin-bottom: 10px;
+            }
+            @include breakpoint-between(900, 1250) {
+                width: 46%;
+            }
+        }
+
+        .to {
+            @extend .from;
+            @include breakpoint(900) {
+                padding-left: 30px;
+            }
+        }
+
+        .arrow {
+            text-align: center;
+            @include breakpoint(900) {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        @include breakpoint-min(901) {
+            > div {
+                display: inline-block;
+
+                &.arrow {
+                    width: 8%;
+                }
+            }
+        }
+    }
+
+    .hash {
+        @include font-size(13px, 13px);
+
+        font-weight: 400;
+        margin: 20px 0 10px;
+        color: #333333;
+        @include breakpoint(900) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .block {
+        text-align: right;
+        position: relative;
+        flex: 1;
+
+        .number {
+            @include font-size(12px, 12px);
+
+            color: #9198BB;
+            padding-left: 30px;
+            display: inline-block;
+            @include breakpoint-min(901) {
+                right: 0;
+                top: 0;
+                position: absolute;
+            }
+            @include breakpoint(900) {
+                 @include font-size(13px, 13px);
+            }
+            @include breakpoint(620) {
+                text-align: left;
+                padding-left: 0;
+                // flex: 1;
+            }
+
+            img {
+                width: 20px;
+                margin-right: 10px;
+                height: 21px;
+                @include breakpoint-min(901) {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                }
+
+                path {
+                    fill: #9198BB;
+                }
+            }
+
+            a {
+                font-size: inherit;
+            }
+        }
+
+        .priceAMB {
+            @include font-size(15px, 15px);
+
+            font-weight: 500;
+            color: #00B7F9;
+
+            &.sent {
+                color: #333;
+            }
+            @include breakpoint(620) {
+                padding-right: 10px;
+            }
+        }
+
+        .priceUSD {
+            @include font-size(11px, 11px);
+
+            color: #9198BB;
+            padding: 5px 0;
+        }
+      
+        @include breakpoint(620) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

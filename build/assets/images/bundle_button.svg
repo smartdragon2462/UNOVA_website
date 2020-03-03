@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 39" width="140" height="39">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-321 -682L1599 -682L1599 1945L-321 1945Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #3c89ff } 
+	</style>
+	<g id="Unova explorer - Bundle detail - Asset" clip-path="url(#cp1)">
+		<path id="Rectangle 888" class="shp0" d="M19.5 0L120.5 0C131.28 0 140 8.72 140 19.5L140 19.5C140 30.28 131.28 39 120.5 39L19.5 39C8.72 39 0 30.28 0 19.5L0 19.5C0 8.72 8.72 0 19.5 0Z" />
+	</g>
+</svg>
