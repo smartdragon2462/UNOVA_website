@@ -5,7 +5,7 @@
   "dependencies": {
     "@ambrosus/react": "^0.16.3",
     "@syncfusion/ej2-react-inputs": "^17.3.14",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "mobx": "^5.15.4",
     "mobx-react": "^6.1.8",
